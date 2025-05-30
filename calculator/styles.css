@@ -1,0 +1,125 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto Mono', sans-serif;
+    background-color: #FAF0E6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+.calculator-container {
+    width: 30rem;
+    min-height: 40rem;
+    background-color: #4A4A4A;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.display {
+    background-color: #E8F0F2;
+    color: #333;
+    width: 100%;
+    height: 6rem;
+    margin: 0 auto 2rem auto;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 2.6rem;
+    padding: 0.8rem 1.2rem;
+    border: 1px solid #B0B0B0;
+}
+
+.calculator-btn-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.2rem;
+    font-size: 2.2rem;
+    padding: 0;
+    width: 100%;
+}
+
+button {
+    border: none;
+    padding: 0;
+    font: inherit;
+    text-align: center;
+    background: none;
+    color: inherit;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button, .fn-button {
+    background-color: #FFA500;
+    color: #FFFFFF;
+    border-radius: 8px;
+    height: 5.5rem;
+    font-weight: bold;
+    transition: background-color 0.15s ease, transform 0.15s ease;
+}
+
+.empty {
+    background-color: transparent;
+    pointer-events: none;
+}
+
+.fn-button {
+    background-color: #D3D3D3;
+    color: #333333;
+}
+
+#AC, #C {
+    background-color: #FF7F7F;
+    color: white;
+}
+
+
+#\= {
+    background-color: #66CDAA;
+    color: white;
+    grid-column: span 2; 
+}
+
+.button:hover, .fn-button:hover {
+    transform: scale(1.03);
+    filter: brightness(110%);
+}
+
+.button:active, .fn-button:active {
+    background-color: #FF8C00;
+    transform: scale(0.98);
+    filter: brightness(90%);
+}
+
+.fn-button:active {
+    filter: brightness(90%);
+}
+
+#AC:active, #C:active {
+    background-color: #E56767;
+}
+
+#\=:active {
+    background-color: #5CA994;
+}
