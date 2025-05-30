@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- import font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="drum-machine" role="application" aria-label="Drum Machine Interface">
+    <div id="pad-bank">
+        <button class="drum-pad" id="Heater-1" data-key="Q" aria-label="Play Heater 1 sound">Q
+        <audio class="clip" src="https://cdn.freecodecamp.org/curriculum/drum/Heater-1.mp3" id="Q" preload="auto"></audio>
+        </button>
+        <button class="drum-pad" id="Heater-2" data-key="W" aria-label="Play Heater 2 sound">W
+        <audio class="clip" src="https://cdn.freecodecamp.org/curriculum/drum/Heater-2.mp3" id="W" preload="auto"></audio>
+        </button>
+        <button class="drum-pad" id="Heater-3" data-key="E" aria-label="Play Heater 3 sound">E
+        <audio class="clip" src="https://cdn.freecodecamp.org/curriculum/drum/Heater-3.mp3" id="E" preload="auto"></audio>
+        </button>
+        <button class="drum-pad" id="Heater-4" data-key="A" aria-label="Play Heater 4 sound">A
+        <audio class="clip" src="https://cdn.freecodecamp.org/curriculum/drum/Heater-4_1.mp3" id="A" preload="auto"></audio>
+        </button>
+        <button class="drum-pad" id="Clap" data-key="S" aria-label="Play Clap sound">S
+        <audio class="clip" src="https://cdn.freecodecamp.org/curriculum/drum/Heater-6.mp3" id="S" preload="auto"></audio>
+        </button>
+        <button class="drum-pad" id="Open-HH" data-key="D" aria-label="Play Open Hi-Hat sound">D
+        <audio class="clip" src="https://cdn.freecodecamp.org/curriculum/drum/Dsc_Oh.mp3" id="D" preload="auto"></audio>
+        </button>
+        <button class="drum-pad" id="Kick-n-Hat" data-key="Y" aria-label="Play Kick and Hat sound">Y
+        <audio class="clip" src="https://cdn.freecodecamp.org/curriculum/drum/Kick_n_Hat.mp3" id="Y" preload="auto"></audio>
+        </button>
+        <button class="drum-pad" id="Kick" data-key="X" aria-label="Play Kick sound">X
+        <audio class="clip" src="https://cdn.freecodecamp.org/curriculum/drum/RP4_KICK_1.mp3" id="X" preload="auto"></audio>
+        </button>
+        <button class="drum-pad" id="Closed-HH" data-key="C" aria-label="Play Closed Hi-Hat sound">C
+        <audio class="clip" src="https://cdn.freecodecamp.org/curriculum/drum/Cev_H2.mp3" id="C" preload="auto"></audio>
+        </button>
+    </div>
+    <div id="controls">
+        <p id="display" aria-live="polite" aria-atomic="true">Ready</p>
+    </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
